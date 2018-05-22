@@ -1,0 +1,14 @@
+2018/05/14 15:22:30 [emerg] 11232#13544: invalid number of arguments in "proxy_set_header" directive in D:\Nginx\nginx-1.14.0/conf/nginx.conf:47
+2018/05/14 15:23:47 [emerg] 14824#14016: invalid number of arguments in "proxy_set_header" directive in D:\Nginx\nginx-1.14.0/conf/nginx.conf:47
+2018/05/14 15:25:52 [emerg] 13836#11556: invalid number of arguments in "proxy_set_header" directive in C:\nginx-1.14.0/conf/nginx.conf:47
+2018/05/14 15:28:02 [emerg] 15760#15856: invalid number of arguments in "proxy_set_header" directive in C:\nginx-1.14.0/conf/nginx.conf:47
+2018/05/14 15:28:57 [emerg] 16360#16356: invalid number of arguments in "proxy_set_header" directive in C:\nginx/conf/nginx.conf:47
+2018/05/14 15:28:58 [emerg] 15560#16080: invalid number of arguments in "proxy_set_header" directive in C:\nginx/conf/nginx.conf:47
+2018/05/14 15:28:59 [emerg] 15928#12416: invalid number of arguments in "proxy_set_header" directive in C:\nginx/conf/nginx.conf:47
+2018/05/14 15:28:59 [emerg] 12644#13616: invalid number of arguments in "proxy_set_header" directive in C:\nginx/conf/nginx.conf:47
+2018/05/14 15:29:00 [emerg] 7040#9144: invalid number of arguments in "proxy_set_header" directive in C:\nginx/conf/nginx.conf:47
+2018/05/14 15:29:00 [emerg] 7296#12640: invalid number of arguments in "proxy_set_header" directive in C:\nginx/conf/nginx.conf:47
+2018/05/14 15:29:00 [emerg] 16296#15376: invalid number of arguments in "proxy_set_header" directive in C:\nginx/conf/nginx.conf:47
+2018/05/14 15:29:00 [emerg] 11304#13832: invalid number of arguments in "proxy_set_header" directive in C:\nginx/conf/nginx.conf:47
+2018/05/14 15:29:01 [emerg] 9488#14460: invalid number of arguments in "proxy_set_header" directive in C:\nginx/conf/nginx.conf:47
+2018/05/14 15:29:32 [emerg] 15260#14792: invalid number of arguments in "proxy_set_header" directive in C:\nginx/conf/nginx.conf:47
