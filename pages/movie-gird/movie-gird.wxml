@@ -1,0 +1,74 @@
+<!--pages/movie-gird/movie-gird.wxml-->
+ 
+<template name='movie-gird1'>
+  <block wx:for='{{theaterData}}' wx:key='index'>
+    <view class='grid-item' data-id="{{item.id}}" bindtap='getDetails'>
+
+    <image src='{{item.images.medium}}'></image>
+    <view class='grid-des'>
+      <text class='grid-des-title'>{{item.title}}</text>
+      <view class='star-sore'>
+        <view class='imgBox'>
+          <view class='img star{{item.rating.average || 0}}'></view>
+        </view>
+         <text class='sore'>{{item.rating.average}}</text>
+      </view>
+      <text class='grid-des-want'>{{item.collect_count}}人想看</text>
+    </view>
+    
+    
+    </view>
+  
+  </block>
+  
+</template>
+<template name='movie-gird2'>
+  <block wx:for='{{comingSoonData}}' wx:key='index'>
+    <view class='grid-item' data-id="{{item.id}}" bindtap='getDetails'>
+
+    <image src='{{item.images.medium}}'></image>
+    <view class='grid-des'>
+      <text class='grid-des-title'>{{item.title}}</text>
+       <view class='star-sore'>
+        <view class='imgBox'>
+          <view class='img star{{item.rating.average || 0}}'></view>
+        </view>
+         <text class='sore'>{{item.rating.average}}</text>
+      </view>
+      <text class='grid-des-want'>{{item.collect_count}}人想看</text>
+    </view>
+    
+    
+    </view>
+  
+  </block>
+  
+</template>
+
+
+<template name='star-sore'>
+    <view class='imgBox'>
+    <image src='https://img3.doubanio.com/f/shire/680a4bc4c384199245b080c7104da5be8ed717d3/pics/rating_icons/ic_rating_m.png'></image>
+    </view>
+
+
+</template>
+
+
+
+<template name='movie-gird3'>
+  <block wx:for='{{details.casts}}' wx:key='index'>
+    <view class='grid-item' data-id="{{item.id}}" bindtap='getDetails'>
+
+    <image src='{{item.avatars.medium}}'></image>
+    <view class='grid-des'>
+      <text class='grid-des-title'>{{item.name}}</text>
+      
+    </view>
+    
+    
+    </view>
+  
+  </block>
+  
+</template>

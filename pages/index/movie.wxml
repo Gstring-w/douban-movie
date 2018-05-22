@@ -1,0 +1,44 @@
+<!--pages/index/movie.wxml-->
+
+ <import src='../movie-gird/movie-gird.wxml'/> 
+<view class='container'> 
+  <view class='search'>
+  <view class='movie-search' bindtap='search'>
+    <icon type='search'></icon>
+    <text class='search-text'>搜索电影</text>   
+  </view>
+  </view>
+  <view class='session-theater'>
+    <view class='gird-title'>
+      <view class='title'>影院热映</view>
+      <view class='more' data-type='intheater'
+      bindtap='getMore'>更多></view>
+    </view>
+    
+      <scroll-view scroll-x>
+      <view class='gird-content'>
+          <template is='movie-gird1' data="{{theaterData}}">
+          </template>
+          </view>
+      </scroll-view>
+    
+    
+  </view>
+  <view class='session-comingSoon'>
+
+  <view class='gird-title'>
+      <view class='title'>即将上映</view>
+      <view class='more' data-type='comingSoon' bindtap='getMore'>更多></view>
+    </view>
+    
+      <scroll-view scroll-x>
+      <view class='gird-content'>
+          <template is='movie-gird2' data="{{comingSoonData}}">
+          </template>
+          </view>
+      </scroll-view>
+  
+  
+  </view>
+  
+</view>

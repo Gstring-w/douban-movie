@@ -1,0 +1,27 @@
+<!--pages/search/search.wxml-->
+<view class='container'>
+  <view class='search'>
+    <icon type='search'></icon>
+    <input class='search-input' type='text' placeholder='搜索电影，导演，演员' bindinput='searchInput'></input>
+    <icon type='cancel' color='purple' bindtap='backIndex'></icon>
+   
+
+  </view>
+
+ <block wx:for='{{dataArr}}' wx:key='{{index}}'>
+      <view class='item' data-id='{{item.id}}' bindtap='getDetails'>
+        <image src='{{item.images.small}}'></image>
+        <text class='des'>
+          <text class='movie-title'>{{item.title}}</text>
+          <text class='movie-des'>{{item.year}}/{{item.genres}}</text>
+          <text class='movie-dir'>导演：{{item.directors[0].name}}</text>
+        <text class='movie-score'>评分：{{item.rating.average}}</text>
+        
+        </text>
+      </view>
+    
+    
+    
+    </block>
+
+</view>

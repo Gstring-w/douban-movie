@@ -1,0 +1,138 @@
+/* pages/more/more.wxss */
+.container{
+  width: 100vw;
+  height: 100vh;
+}
+.nav-title{
+  display: flex;
+  position: fixed;
+  width: 100%;
+  height: 10vh;
+  background: #eee;
+   z-index: 11; 
+}
+.intheater,.comingSoon{
+  flex: 1;
+  text-align: center;
+  line-height: 10vh;
+  font-weight: 600;
+  color: #aaa;
+}
+.active{
+  color:#30A080;
+  border-bottom:8rpx solid #30A080; 
+}
+.nav-content{
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  padding-top: 10vh; 
+
+}
+.nav-content scroll-view{
+  width: 100%;
+  height: 100%;
+}
+.movie-item{
+  display: flex;
+  flex-direction: row;
+  padding: 30rpx;
+}
+.movie-item image{
+  width: 270rpx;
+  height: 350rpx;
+  flex: 1;
+}
+.movie-des{
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+ .movie-des-title{
+    font-weight: 600;
+    font-size: 32rxp;
+    display: block;
+    padding: 0 20rpx 20rpx;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+} 
+.movie-des-content text{
+  color: #aaa;
+  width: 400rpx;
+  font-size: 30rpx;
+  display: block;
+  padding: 20rpx 20rpx 10rpx;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.movie-des-content text .dir{
+  display: inline-block;
+}
+.star-sore{
+  padding: 0rpx 20rpx 20rpx;
+  position: relative;
+  width: 210rpx;
+  height: 25rpx;
+}
+.imgBox{
+  
+
+  width: 80%;
+  height: 80%;
+  overflow: hidden;
+  text-align: center;
+  display: inline-block;
+
+}
+.imgBox .img{
+  width: 50%;
+  height: 100%;
+  background-image: url(https://img3.doubanio.com/f/shire/680a4bc4c384199245b080c7104da5be8ed717d3/pics/rating_icons/ic_rating_m.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-position-y: 0%; */
+}
+.sore{
+  position: absolute;
+  top: -10rpx;
+  left: 100rpx;
+  font-size: 25rpx;
+  vertical-align: top;
+  
+}
+
+.star10{
+  background-position: 0 0;
+}
+.star9{
+  background-position: 0 10%;
+}
+.star8{
+  background-position: 0 20%;
+}
+.star7{
+  background-position: 0 30%;
+}
+.star6{
+  background-position: 0 40%;
+}
+.star5{
+  background-position: 0 50%;
+}
+.star4{
+  background-position: 0 60%;
+}
+.star3{
+  background-position: 0 70%;
+}
+.star2{
+  background-position: 0 80%;
+}
+.star1{
+  background-position: 0 90%;
+}
+.star0{
+  background-position: 0 100%;
+}

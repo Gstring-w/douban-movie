@@ -1,0 +1,22 @@
+{
+  "pages": [
+    "pages/index/movie",
+    "pages/more/more",
+ 
+    "pages/search/search",
+    "pages/movie-gird/movie-gird",
+    "pages/movie-details/movie-details"
+
+    
+    
+    
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#30A080",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "豆瓣电影",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+  }
+}

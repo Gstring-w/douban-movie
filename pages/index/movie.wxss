@@ -1,0 +1,69 @@
+/* pages/index/movie.wxss */
+
+@import "/pages/movie-gird/movie-gird";
+page{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+.container{
+  width: 100%;
+  background: #fff;
+  box-sizing: content-box;
+}
+
+.search{
+  width: 100%;
+  height: 100%;
+  padding-top: 10rpx; 
+}
+
+.movie-search{
+  margin: 0rpx 20rpx;
+  border: 1px solid #aaa;
+  box-sizing: content-box;
+  padding: 10rpx 20rpx;
+  border-radius: 20rpx;
+  height: 60rpx;
+  display: flex;
+  align-items: center;
+}
+.movie-search icon{
+  width: 50rpx;
+  height: 50rpx;
+  display: inline-block;
+  margin: 8rpx 0;
+}
+.movie-search .search-text{
+  vertical-align: top;
+  width: 80%;
+  height: 80%;
+  text-align: center;
+  display: inline-block;
+  color: #aaa;
+  /* border: 1px solid #000; */
+}
+.gird-title{
+  border-top: 1px solid #ccc;
+  margin: 20rpx auto 0;
+  width: 100%;
+  display: flex;
+  background: #eee;
+  padding: 0 20rpx;
+}
+.gird-title .title{
+  padding-top:15rpx; 
+   flex: 8; 
+}
+.gird-title .more{
+  flex: 2;
+  color: #30A080;
+  padding-top:15rpx; 
+}
+.gird-content{
+  padding: 20rpx 0;
+  width: 400%; 
+  background: #eee;
+  border-bottom: 1px solid #ccc;
+}

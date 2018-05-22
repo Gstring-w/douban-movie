@@ -1,0 +1,49 @@
+<!--pages/movie-details/movie-details.wxml-->
+ <import src='../movie-gird/movie-gird.wxml'/> 
+<view class='container'>
+  <view class='movie-poster'>
+    <image src='{{details.images.medium}}'></image>
+  </view>
+  <view class='movie-des'>
+    <view class='movie-basis'>
+        <text class='basis-title'>{{details.title}}</text>
+        <view class='basis-content'>
+            <view class='basis-content-left'>
+                <text>{{details.year}}/{{details.genres[0]}}/{{details.genres[1]}}/{{details.genres[2]}}</text>
+                <text>原名：{{details.original_title}}</text>
+                <text>国家：{{details.countries[0]}}</text>
+            </view>
+            <view class='basis-content-right'>
+                  <view class='movie-sore'>
+                      <view class='sore-mo'>{{details.rating.average}}</view>
+                     <view class='star-sore' style='position:relative'>
+        <view class='imgBox' style='position:absolute;left:0;top:0;margin-left:-20rpx;'>
+          <view class='img star{{details.rating.average || 0}}'></view>
+        </view>
+         
+      </view>
+                      <view class='want'>{{details.collect_count}}人</view>
+                  </view>
+            </view>
+        </view>
+        <view class='wantSee'>想看</view>
+        <view class='seed'>看过</view>
+        <view class='brief'>
+          <text class='brief-title'>简介：</text>
+          <text class='brief-content'>{{details.summary}}</text>
+        </view>
+       
+        <view class='people'>
+ 
+        <scroll-view scroll-x>
+      <view class='gird-content'>
+          <template is='movie-gird3' data="{{details}}">
+          </template>
+          </view>
+      </scroll-view>
+
+       </view>
+    </view>
+  
+  </view>
+</view>

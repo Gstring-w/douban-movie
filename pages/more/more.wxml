@@ -1,0 +1,61 @@
+<!--pages/more/more.wxml-->
+<view class='container'>
+  <view class='nav-title'>
+    <text class='intheater {{intheater ? "" : "active"}}' bindtap='changeNav'  data-id='intheater'>正在热映</text>
+    <text class='comingSoon {{comingSoon ? "" : "active"}}' bindtap='changeNav' data-id='comingSoon'>即将上映</text>
+  </view>
+  <block wx:if='{{!intheater}}'>
+  <view class='nav-content'>
+      <scroll-view scroll-y bindscrolltolower='loadMore' data-id='intheater'>
+      <view wx:for='{{typeId.data}}' wx:key='{{index}}'data-id="{{item.id}}" bindtap='getDetails'>
+        <view class='movie-item' data-id="{{item.id}}" bindtap='getDetails'>
+          <image src='{{item.images.medium}}'></image>
+          <view class='movie-des'>
+            <text class='movie-des-title'>{{item.title}}</text>
+            <view class='movie-des-content'>
+              <text>主演：{{item.casts[0].name}}/{{item.casts[1].name}}/{{item.casts[2].name}}</text>
+              <text>导演：{{item.directors[0].name}}
+              </text>
+               <view class='star-sore'>
+        <view class='imgBox'>
+          <view class='img star{{item.rating.average || 0}}'></view>
+        </view>
+         <text class='sore'>{{item.rating.average}}</text>
+      </view>
+              <text style='color:#30A080'>{{item.collect_count}}人想看</text>
+            </view>          
+          </view>
+        </view>
+      </view>
+      </scroll-view>
+  </view>
+</block>
+
+
+  <block wx:if='{{!comingSoon}}'>
+  <view class='nav-content'>
+      <scroll-view scroll-y bindscrolltolower='loadMore' data-id='comingSoon'>
+      <view wx:for='{{typeId1.data}}' wx:key='{{index}}'>
+        <view class='movie-item'>
+          <image src='{{item.images.medium}}'></image>
+          <view class='movie-des'>
+            <text class='movie-des-title'>{{item.title}}</text>
+            <view class='movie-des-content'>
+              <text>主演：{{item.casts[0].name}}/{{item.casts[1].name}}/{{item.casts[2].name}}</text>
+              <text>导演：{{item.directors[0].name}}
+              </text>
+               <view class='star-sore'>
+        <view class='imgBox'>
+          <view class='img star{{item.rating.average || 0}}'></view>
+        </view>
+         <text class='sore'>{{item.rating.average}}</text>
+      </view>
+              <text style='color:#30A080'>{{item.collect_count}}人想看</text>
+            </view>
+          </view>
+        </view>
+      </view>
+      </scroll-view>
+  </view>
+  </block>
+</view>
